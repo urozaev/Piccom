@@ -9,28 +9,71 @@
 <body>
   <header class="header">
     <div class="container header__container">
+      <div class="header__logo">
+        <img class="logo" src="images/logo.jpg">
+      </div>
+      <div class="header__schedule-inner">
+        <div class="header__schedule">
+          <div class="header__schedule-icon">
+          </div>
+          <div class="header__schedule-work">
+            <h4 class="header__schedule-title">График работы</h4>
+            <span class="header__schedule-hours">пн-пт 8:00 - 17:00</span>
+          </div>
+        </div>
+        <div class="header__schedule">
+          <div class="header__schedule-icon">
+          </div>
+          <div class="header__schedule-work">
+            <h4 class="header__schedule-title">График приема граждан</h4>
+            <span class="header__schedule-hours">чт 16:00 - 17:00</span>
+          </div>
+        </div>
+      </div>
+      <div class="header__search-box">
+        <span class="header__search-question">Не можете что-то найти? Введите запрос</span>
+        <form class="search-form" role="search">
+          <div class="search-form__box">
+            <div class="search-form__search-icon">
+            </div>
+            <input class="search-form__input" type="text" placeholder="Например, погасить задолженность по ЖКХ в рассрочку" onfocus="placeholder='';" onblur="placeholder='Например, погасить задолженность по ЖКХ в рассрочку';" aria-label="Запрос">
+            <button class="search-form__button" role="button" type="submit">
+              <div class="search-form__submit-icon">
+              </div>
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   </header>
   <div class="panel-menu">
     <nav class="menu container">
       <ul class="menu__list">
         <li class="menu__list-item">
-         <a href="#0" class="link">Документы</a>
+         <a href="#0" class="link">
+           <div class="menu__list-box">Документы</div>
+         </a>
         </li>
       <li class="menu__list-item">
-         <a href="#0" class="link">Объекты</a>
+        <a href="#0" class="link">
+          <div class="menu__list-box">Объекты</div>
+        </a>
         </li>
       <li class="menu__list-item">
-         <a href="#0" class="link">Новости</a>
+        <a href="#0" class="link">
+          <div class="menu__list-box">Новости</div>
+        </a>
         </li>
       <li class="menu__list-item">
-         <a href="#0" class="link">Контакты</a>
+        <a href="#0" class="link">
+          <div class="menu__list-box">Контакты</div>
+        </a>
         </li>
       </ul>
     </nav>
   </div>
-  <main class="main container">
-    <div class="main__content">
+  <main class="main">
+    <div class="main__content container">
       <section class="main__column">
         <h2 class="main__column-title">Управляющие организации микрорайона Арбеково</h2>
         <p class="main__column-text text">Управляющие организации микрорайона Арбеково – это группа специУправляющие организации микрорайона Арбеково – это группа специУправляющие организации микрорайона Арбеково – это группа специУправляющие организации микрорайона Арбеково – это группа специУправляющие организации микрорайона Арбеково – это группа специ
@@ -39,6 +82,15 @@
         </p>
         <p class="main__column-text text">Управляющие организации микрорайона Арбеково – это группа специУправляющие организации микрорайона Арбеково – это группа специУправляющие организации микрорайона Арбеково – это группа специУправляющие организации микрорайона Арбеково – это группа специУправляющие организации микрорайона Арбеково – это группа специ
         </p>
+        <p class="main__column-text text">Управляющие организации микрорайона Арбеково – это группа специУправляющие организации микрорайона Арбеково – это группа специУправляющие организации микрорайона Арбеково – это группа специУправляющие организации микрорайона Арбеково – это группа специУправляющие организации микрорайона Арбеково – это группа специ
+        </p>
+        <ul class="main__column-list">
+          <li class="main__column-text">Содержание помещений общего пользования (подъезды, лифтовые), cодержание помещений общего пользования (подъезды, лифтовые)</li>
+          <li class="main__column-text">Обеспечение услуг электроснабжения, теплоснабжения, горячег</li>
+          <li class="main__column-text">Круглосуточная диспетчерская служба</li>
+          <li class="main__column-text">Содержание помещений общего пользования (подъезды, лифтовые), Содержание помещений общего пользования (подъезды, лифтовые),Содержание помещений общего пользования (подъезды, лифтовые)</li>
+          <li class="main__column-text">Содержание помещений общего пользования (подъезды, лифтовые)</li>
+        </ul>
       </section>
       <aside class="side-bar">
         <div class="side-bar__form-box">
@@ -56,7 +108,7 @@
                       </g>
                     </svg>
                   </div>
-                  <input type="text" id="form" placeholder="Например, Иванов Иван Иванович" onfocus="placeholder='';" onblur="placeholder='Например, Иванов Иван Иванович';">
+                  <input type="text" id="form" placeholder="Например, Иванов Иван" onfocus="placeholder='';" onblur="placeholder='Например, Иванов Иван';">
                 </div>
               </div>
             </div>
@@ -90,16 +142,45 @@
             </div>
             <div class="form__box form__button-box">
               <button class="form__button" aria-label="Записаться">
-                <a href="#0" class="button__link">ЗАПИСАТЬСЯ</a>
+                <a href="#0" class="button__link link">ЗАПИСАТЬСЯ</a>
               </button>
             </div>
           </form>
         </div>
-        <div class="side-bar__documents-box">
+        <div class="side-bar__document-box">
+          <div class="side-bar__document-header">
+            <h2 class="side-bar__title">Документы</h2>
+            <a class="side-bar__link link" href="#">
+              <span class="side-bar__documents">Все документы →</span>
+            </a>
+          </div>
+          <div class="side-bar__document-inner">
+            <div class="side-bar__document-item">
+              <div class="side-bar__document-image">
+              </div>
+              <a class="side-bar__link link" href="#">
+                <span class="side-bar__document-name">Лицензия</span>
+              </a>
+            </div>
+            <div class="side-bar__document-item">
+              <div class="side-bar__document-image">
+              </div>
+              <a class="side-bar__link link" href="#">
+                <span class="side-bar__document-name">Свидетельство о государственной регистрации</span>
+              </a>
+            </div>
+            <div class="side-bar__document-item">
+              <div class="side-bar__document-image">
+              </div>
+              <a class="side-bar__link link" href="#">
+                <span class="side-bar__document-name">Свидетельство о постановке на налоговый учет</span>
+              </a>
+            </div>
+          </div>
         </div>
       </aside>
     </div>
-    <section class="latest">
+    <section class="latest container">
       <h2 class="latest__title title">Последние новости</h2>
       <div class="latest__box">
         <div class="latest__item">
@@ -110,7 +191,7 @@
           <div class="latest__inner">
             <span class="latest__year">2017</span>
             <h3 class="latest__news-title title">Новогодняя ёлка в ЖК «Арбековская застава»</h3>
-            <p class="latest__text text">
+            <p class="latest__text">
             </p>
           </div>
         </div>
@@ -122,7 +203,7 @@
           <div class="latest__inner">
             <span class="latest__year">2017</span>
             <h3 class="latest__news-title title">Научное шоу в ЖК «Арбековская застава»</h3>
-            <p class="latest__text text">
+            <p class="latest__text">
             </p>
           </div>
         </div>
@@ -134,7 +215,7 @@
           <div class="latest__inner">
             <span class="latest__year">2017</span>
             <h3 class="latest__news-title title">Весёлые каникулы «Арбековской застава»</h3>
-            <p class="latest__text text">
+            <p class="latest__text">
             </p>
           </div>
         </div>
@@ -142,6 +223,22 @@
     </section>
   </main>
   <footer class="footer">
+    <div class="footer__container container">
+      <h4 class="footer__requisites-title">Реквизиты</h4>
+      <div class="footer__box">
+        <div class="footer__content">
+          <div class="footer__requisites">
+            <span class="footer__text">ИНН:    5836677690<br>КПП:    583601001<br>ОКПО:    02671046<br>ОГРН:   71046583607690</span>
+          </div>
+          <div class="footer__requisites">
+            <span class="footer__text">Фактический адрес:    440026, Российская Федерация, Пензенская область, город Пенза, улица Карла Маркса, дом 5А, офис 309<br>Юридический адрес:    440026, Российская Федерация, Пензенская область, город Пенза, улица Карла Маркса, дом 5А, офис 309<br>Р/с:    40702810800930000617 в ОАО "СМП Банк", г. Москва<br>БИК:    044583503</span>
+          </div>
+        </div>
+        <div class="footer__content">
+          <span class="footer__copyright">© ООО "ПИК-Комфорт", 2011-2017</span>
+        </div>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
