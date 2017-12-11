@@ -38,7 +38,7 @@ h4 {
 
 .header__inner {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .header__icon {
@@ -175,24 +175,23 @@ h4 {
   color: #fff;
 }
 
-.main {
+.content-page {
   font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   margin-top: 4.5rem;
   margin-bottom: 8.5rem;
 }
 
-.main__column {
-  max-width: 86rem;
-  margin-right: 2rem;
+.main {
+  flex-grow: 1;
 }
 
-.main__column-title {
+.main__title {
   font-size: 2.8rem;
   margin-bottom: 4rem;
 }
 
-.main__column-text {
+.main__text {
   margin-top: 0;
   line-height: 1.5;
 }
@@ -201,17 +200,19 @@ h4 {
   margin-bottom: 2.5rem;
 }
 
-.main__content {
+.content-page__inner {
   display: flex;
   margin-bottom: 6rem;
 }
 
-.main__column-list {
+.main__list {
   padding-left: 3.5rem;
 }
 
 .side-bar {
-  max-width: 42rem;
+  width: 42rem;
+  margin-left: 3.9rem;
+  flex: none;
 }
 
 .side-bar__link {
@@ -352,7 +353,6 @@ h4 {
 
 .latest__news-title {
   font-size: 2rem;
-  margin-top: 1rem;
 }
 
 .latest__inner {
@@ -432,6 +432,7 @@ h4 {
   .logo {
   margin: 0;
   width: 100%;
+  align-self: center;
   }
 
   .header {
@@ -439,7 +440,8 @@ h4 {
   }
 
   .header__logo {
-  align-self: center;
+    display: flex;
+    align-self: center;
   }
 
   .header__layout {
@@ -470,15 +472,15 @@ h4 {
   margin-bottom: 3.5rem;
 }
 
-  .main {
+  .content-page {
   margin-bottom: 6.5rem;
   }
 
-  .main__content {
+  .content-page__inner {
   flex-direction: column;
   }
 
-  .main__column {
+  .main {
   margin-right: 0;
   margin-bottom: 5.5rem;
   }
@@ -509,7 +511,19 @@ h4 {
     font-size: 8px;
   }
 
-  .main__content {
+  .search-form__label {
+    font-size: 1.4rem;
+  }
+
+  .search-form__input {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+  width: 32rem;
+}
+
+  .content-page__inner{
     margin-bottom: 5.5rem;
   }
 
@@ -546,11 +560,6 @@ h4 {
   }
 
   .layout {
-    font-size: 0;
-    margin-bottom: 1rem;
-  }
-
-  .point, .envelope {
     display: none;
   }
 
@@ -572,5 +581,5 @@ h4 {
 
   .footer__copyright {
     top: 50%;
-    right: 30%;
+    right: 27.5%;
 }
