@@ -166,8 +166,11 @@ h4 {
 }
 
 .menu__list-box {
-  padding: 1rem 1rem;
-  border-bottom: 0.1rem solid #465590;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.9rem;
+  padding-left: 1rem;
+  border-bottom: 0.2rem solid #465590;
 }
 
 .menu__list-box:hover {
