@@ -355,10 +355,19 @@ h4 {
   display: flex;
   align-items: center;
   margin-top: 1.5rem;
+  margin-right: 2rem;
+  width: 34rem;
 }
 
 .side-bar__document-item:first-child {
   margin-top: 0;
+}
+
+.side-bar__document-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  font-size: 1.3rem;
 }
 
 .page-counter {
