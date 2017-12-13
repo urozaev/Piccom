@@ -738,6 +738,11 @@ h4 {
 }
 
 @media screen and (max-width: 420px) {
+
+  .logo {
+    width: 28rem;
+  }
+
   .header__layout {
     flex-direction: column-reverse;
     align-items: center;
