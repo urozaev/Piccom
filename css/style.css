@@ -423,6 +423,11 @@ h4 {
   margin-top: 1rem;
 }
 
+.news__link {
+  text-decoration: none;
+  color: #000;
+}
+
 .footer {
   font-family: 'PT Sans', sans-serif;
   font-size: 1.3rem;
