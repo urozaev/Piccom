@@ -180,13 +180,110 @@ h4 {
 
 }
 
+#menu-hamburger__icon {
+	width: 3rem;
+	position: relative;
+	height: 3.2rem;
+}
+
+#menu-hamburger__icon span {
+  display: block;
+  position: absolute;
+  height: 0.6rem;
+  width: 50%;
+  background: #f5f9fa;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#menu-hamburger__icon span:nth-child(even) {
+  left: 50%;
+  border-radius: 0 0.9rem 0.9rem 0;
+}
+
+#menu-hamburger__icon span:nth-child(odd) {
+  left:0;
+  border-radius: 0.9rem 0 0 0.9rem;
+}
+
+#menu-hamburger__icon span:nth-child(1), #menu-hamburger__icon span:nth-child(2) {
+  top: 0;
+}
+
+#menu-hamburger__icon span:nth-child(3), #menu-hamburger__icon span:nth-child(4) {
+  top: 1.2rem;
+}
+
+#menu-hamburger__icon span:nth-child(5), #menu-hamburger__icon span:nth-child(6) {
+  top: 2.4rem;
+}
+
+#menu-hamburger__icon.open span:nth-child(1),#menu-hamburger__icon.open span:nth-child(6) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#menu-hamburger__icon.open span:nth-child(2),#menu-hamburger__icon.open span:nth-child(5) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#menu-hamburger__icon.open span:nth-child(1) {
+  left: 0.5rem;
+  top: 0.7rem;
+}
+
+#menu-hamburger__icon.open span:nth-child(2) {
+  left: calc(50% - 5px);
+  top: 0.7rem;
+}
+
+#menu-hamburger__icon.open span:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+
+#menu-hamburger__icon.open span:nth-child(4) {
+  left: 100%;
+  opacity: 0;
+}
+
+#menu-hamburger__icon.open span:nth-child(5) {
+  left: 0.5rem;
+  top: 2.9rem;
+}
+
+#menu-hamburger__icon.open span:nth-child(6) {
+  left: calc(50% - 5px);
+  top: 2.9rem;
+}
+
+.menu-hamburger {
+	font-size: 0;
+	background-color: #465590;
+	border: none;
+	cursor: pointer;
+	display: none;
+}
+
 .link {
   text-decoration: none;
   color: #fff;
 }
 
 .breadcrumbs {
-  height: 4rem;
+  min-height: 4rem;
   background-color: #f5f9fa;
 }
 
@@ -250,6 +347,10 @@ h4 {
 .side-bar__title {
   font-size: 2.6rem;
   margin-bottom: 3.5rem;
+}
+
+.side-bar__form-box {
+  margin-bottom: 5.5rem;
 }
 
 .form__inner {
@@ -332,10 +433,6 @@ h4 {
   background-color: #5361a5;
 }
 
-.side-bar__document-box {
-  margin-top: 5.5rem;
-}
-
 .side-bar__document-header {
   display: flex;
   align-items: baseline;
@@ -355,7 +452,7 @@ h4 {
   display: flex;
   align-items: center;
   margin-top: 1.5rem;
-  margin-right: 2rem;
+  margin-right: 2%;
   width: 34rem;
 }
 
@@ -367,7 +464,6 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  font-size: 1.3rem;
 }
 
 .page-counter {
@@ -528,11 +624,21 @@ h4 {
   max-width: 100%;
 }
 
+  .side-bar {
+    width: auto;
+    margin-left: 0;
+  }
+
   .side-bar__document-header {
   justify-content: flex-start;
   flex-direction: column;
   margin-bottom: 3.5rem;
-}
+  }
+
+  .side-bar__document-item {
+    margin-right: 0;
+    width: auto;
+  }
 
   .content-page {
   margin-bottom: 6.5rem;
@@ -554,11 +660,11 @@ h4 {
 
   .side-bar__form-box {
   min-width: 48%;
+  margin-right: 6%;
   }
 
   .side-bar__document-box {
   margin-top: 0;
-  margin-left: 7rem;
   }
 
   .side-bar__document-header {
@@ -583,7 +689,17 @@ h4 {
 
   .logo {
   width: 32rem;
-}
+  }
+
+  .menu__list {
+    display: none;
+  }
+
+  .menu-hamburger {
+		display: flex;
+    margin-left: 93%;
+    padding: 0.6rem;
+	}
 
   .content-page__inner{
     margin-bottom: 5.5rem;
@@ -591,14 +707,20 @@ h4 {
 
   .side-bar {
     flex-direction: column;
+    margin-left: 0;
   }
 
   .side-bar__form-box {
     margin-bottom: 5.5rem;
+    margin-right: 0;
   }
 
   .side-bar__document-box {
     margin: 0;
+  }
+
+  .side-bar__document-item {
+    width: 34rem;
   }
 
   .latest__box {
@@ -619,6 +741,10 @@ h4 {
   .header__layout {
     flex-direction: column-reverse;
     align-items: center;
+  }
+
+  .menu-hamburger {
+    margin-left: 90%;
   }
 
   .layout {
