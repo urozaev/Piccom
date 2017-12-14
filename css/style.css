@@ -26,8 +26,16 @@ h4 {
   padding-bottom: 2rem;
 }
 
-.header__logo-link {
+.link {
   text-decoration: none;
+}
+
+.link_b {
+  color: #000;
+}
+
+.link_w {
+  color: #fff;
 }
 
 .header__layout {
@@ -35,19 +43,14 @@ h4 {
   margin: 0 2.5%;
 }
 
-.header__link {
-  text-decoration: none;
-  color: #000;
-}
-
-.header__inner {
+.info {
   display: flex;
   align-items: flex-start;
 }
 
-.header__icon {
-  width: 2.4rem;
-  height: 2.4rem;
+.info__icon {
+  width: 2.2rem;
+  height: 2.2rem;
   margin-right: 0.7rem;
 }
 
@@ -75,7 +78,7 @@ h4 {
   display: none;
 }
 
-.header__contacts-box {
+.header__contacts-inner {
   font-size: 1.5rem;
   margin-left: 3.8%;
 }
@@ -277,11 +280,6 @@ h4 {
 	display: none;
 }
 
-.link {
-  text-decoration: none;
-  color: #fff;
-}
-
 .breadcrumbs {
   min-height: 4rem;
   background-color: #f5f9fa;
@@ -294,7 +292,6 @@ h4 {
 
 .breadcrumbs__link {
   color: #4758a5;
-  text-decoration: none;
 }
 
 .breadcrumbs__item {
@@ -340,13 +337,8 @@ h4 {
   flex: none;
 }
 
-.side-bar__link {
+.documents__link {
   color: #4758a5;
-}
-
-.side-bar__title {
-  font-size: 2.6rem;
-  margin-bottom: 3.5rem;
 }
 
 .side-bar__form-box {
@@ -433,13 +425,18 @@ h4 {
   background-color: #5361a5;
 }
 
-.side-bar__document-header {
+.documents__header {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  margin-bottom: 3.5rem;
 }
 
-.side-bar__document-image {
+.title {
+  font-size: 2.6rem;
+}
+
+.documents__image {
   min-width: 4rem;
   height: 4.5rem;
   background: url(../images/pdf.svg)
@@ -448,7 +445,7 @@ h4 {
   padding-right: 1rem;
 }
 
-.side-bar__document-item {
+.documents__item {
   display: flex;
   align-items: center;
   margin-top: 1.5rem;
@@ -456,41 +453,33 @@ h4 {
   width: 34rem;
 }
 
-.side-bar__document-item:first-child {
+.documents__item:first-child {
   margin-top: 0;
 }
 
-.side-bar__document-inner {
+.documents__inner {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
 }
 
-.page-counter {
+.pagination {
   display: flex;
   align-items: baseline;
 }
 
-.page-counter__number {
+.pagination__number {
   color: #000;
   padding: 0.5rem 1rem;
 }
 
-.page-counter__number:hover {
+.pagination__number:hover {
   background-color: #384997;
   color: #fff;
 }
 
-.page-counter__link {
-  text-decoration: none;
-}
-
 .latest {
   margin-top: 6rem;
-}
-
-.latest__title {
-  font-size: 2.6rem;
 }
 
 .latest__box {
@@ -528,9 +517,54 @@ h4 {
   margin-top: 1rem;
 }
 
-.news__link {
-  text-decoration: none;
-  color: #000;
+.contacts {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contacts__content-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.contacts__content {
+  width: 22rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+.contacts__content:nth-of-type(even) {
+  margin-right: 0;
+}
+
+.contacts__map {
+  width: 100%;
+}
+
+.objects {
+  position: relative;
+}
+
+.objects::before {
+  padding-left: 100%;
+  padding-top: 66%;
+}
+
+.objects__bg {
+  display: block;
+  background-color: red;
+}
+
+.objects__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.object_1 {
+  background: url(../images/object1.jpg) no-repeat;
+  background-size: contain;
 }
 
 .footer {
@@ -610,7 +644,7 @@ h4 {
   align-items: baseline;
   }
 
-  .header__contacts-box {
+  .header__contacts-inner {
   display: none;
   margin: 0;
   line-height: 1.5;
@@ -629,13 +663,13 @@ h4 {
     margin-left: 0;
   }
 
-  .side-bar__document-header {
+  .documents__header {
   justify-content: flex-start;
   flex-direction: column;
   margin-bottom: 3.5rem;
   }
 
-  .side-bar__document-item {
+  .documents__item {
     margin-right: 0;
     width: auto;
   }
@@ -663,13 +697,21 @@ h4 {
   margin-right: 6%;
   }
 
-  .side-bar__document-box {
+  .documents {
   margin-top: 0;
   }
 
-  .side-bar__document-header {
+  .documents__header {
   flex-direction: row;
   justify-content: space-between;
+  }
+
+  .contacts {
+    flex-direction: column;
+  }
+
+  .contacts__map {
+    margin-top: 5.5rem;
   }
 }
 
@@ -715,11 +757,11 @@ h4 {
     margin-right: 0;
   }
 
-  .side-bar__document-box {
+  .documents {
     margin: 0;
   }
 
-  .side-bar__document-item {
+  .documents__item {
     width: 34rem;
   }
 
@@ -760,7 +802,7 @@ h4 {
     display: flex;
   }
 
-  .header__inner {
+  .info {
     margin: 0 1rem;
   }
 
