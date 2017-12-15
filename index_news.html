@@ -68,14 +68,14 @@
       </div>
     </div>
     <div class="header__search-box">
-      <form class="search-form" role="search">
-        <label class="search-form__label">Не можете что-то найти? Введите запрос</label>
-        <div class="search-form__box">
-          <div class="search-form__search-icon info__icon">
+      <form class="form search-form" role="search">
+        <label class="form__label">Не можете что-то найти? Введите запрос</label>
+        <div class="form__box">
+          <div class="form__icon search-icon info__icon">
           </div>
-          <input class="search-form__input" type="text" placeholder="Например, погасить задолженность по ЖКХ в рассрочку" onfocus="placeholder='';" onblur="placeholder='Например, погасить задолженность по ЖКХ в рассрочку';" aria-label="Запрос">
-          <button class="search-form__button" role="button" type="submit">
-            <div class="search-form__submit-icon info__icon">
+          <input id="form" type="text" placeholder="Например, погасить задолженность по ЖКХ в рассрочку" onfocus="placeholder='';" onblur="placeholder='Например, погасить задолженность по ЖКХ в рассрочку';" aria-label="Запрос">
+          <button class="form__submit" type="submit" aria-label="Найти">
+            <div class="form__submit-icon info__icon">
             </div>
           </button>
         </div>
@@ -218,29 +218,21 @@
       <aside class="side-bar">
         <div class="side-bar__form-box">
           <h2 class="title">Записаться на прием</h2>
-          <form action="url" class="form" method="post">
+          <form class="form form__layout" method="post">
             <div class="form__inner">
-              <h4 class="form__title">Введите ваше ФИО</h4>
+              <label class="form__label">Введите ваше ФИО</label>
               <div class="form__box">
-                <div class="form__box-input">
-                  <div class="form__box-icon">
-                    <div class="form__icon person">
-                    </div>
-                  </div>
-                  <input type="text" id="form" placeholder="Например, Иванов Иван Иванович" onfocus="placeholder='';" onblur="placeholder='Например, Иванов Иван Иванович';">
+                <div class="form__icon person info__icon">
                 </div>
+                <input type="text" class="form__input" id="form" placeholder="Например, Иванов Иван Иванович" onfocus="placeholder='';" onblur="placeholder='Например, Иванов Иван Иванович';" aria-label="Введите ФИО">
               </div>
             </div>
             <div class="form__inner">
-              <h4 class="form__title">Выберите дату приема</h4>
+              <label class="form__label">Выберите дату приема</label>
               <div class="form__box">
-                <div class="form__box-input">
-                  <div class="form__box-icon">
-                    <div class="form__icon date">
-                    </div>
-                  </div>
-                  <input type="text" id="form" placeholder="Например, 32 декабря" onfocus="placeholder='';" onblur="placeholder='Например, 32 декабря';">
+                <div class="form__icon date info__icon">
                 </div>
+                <input type="text" class="form__input" id="form" placeholder="Например, 32 декабря" onfocus="placeholder='';" onblur="placeholder='Например, 32 декабря';" aria-label="Записаться">
               </div>
             </div>
             <button class="form__button" aria-label="Записаться">
