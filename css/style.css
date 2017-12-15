@@ -363,6 +363,7 @@ h4 {
 .form__layout {
   background-color: #f5f9fa;
   padding: 4.5rem 2.5rem 2.5rem 2.5rem;
+  margin-top: 3rem;
 }
 
 .form__inner {
@@ -445,6 +446,7 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
+  margin-top: 3rem;
 }
 
 .pagination {
