@@ -38,6 +38,20 @@ h4 {
   color: #fff;
 }
 
+.menu__link {
+  position: relative;
+  background-color: #5361a5;
+}
+
+.menu__link::after {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid #fff;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
 .header__layout {
   width: 27%;
   margin: 0 2.5%;
@@ -174,11 +188,7 @@ h4 {
 }
 
 .menu__list-box {
-  padding-top: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 0.9rem;
-  padding-left: 1rem;
-  border-bottom: 0.2rem solid #465590;
+  padding: 1.05rem 1.5rem;
 }
 
 .menu__list-box:hover {
@@ -452,6 +462,11 @@ h4 {
   color: #fff;
 }
 
+.first-page {
+  background-color: #384997;
+  color: #fff;
+}
+
 .latest {
   margin-top: 6rem;
 }
@@ -516,24 +531,46 @@ h4 {
   width: 100%;
 }
 
-.objects {
-  position: relative;
+.object {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.objects::before {
+.object__inner {
+  width: 30%;
+  margin-right: 3%;
+  margin-bottom: 2.5rem;
+}
+
+.object__link {
+  position: relative;
+  display: block;
+}
+
+.object__link::before {
+  content: "";
+  display: block;
   padding-left: 100%;
   padding-top: 66%;
+  background-color: #f5f9fa;
+  border-radius: 3%;
 }
 
-.objects__bg {
-  display: block;
-  background-color: red;
-}
-
-.objects__image {
+.object__image {
   position: absolute;
   top: 0;
   left: 0;
+  max-width: 100%;
+  display: block;
+  border-radius: 3%;
+}
+
+.object__name {
+  display: block;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 .object_1 {
@@ -687,6 +724,15 @@ h4 {
   .contacts__map {
     margin-top: 5.5rem;
   }
+
+  .object {
+    flex-direction: column;
+  }
+
+  .object__inner {
+    width: 90%;
+  }
+
 }
 
 @media screen and (max-width: 640px) {
