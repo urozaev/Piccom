@@ -138,7 +138,7 @@ h4 {
 
 .form__box {
   margin-top: 1rem;
-  border: 0.1rem solid #b9b9bb;
+  border: 1px solid #b9b9bb;
   height: 4rem;
   position: relative;
 }
