@@ -208,15 +208,15 @@ h4 {
 }
 
 #menu-hamburger__icon {
-	width: 3.5rem;
+	width: 3rem;
 	position: relative;
-	height: 3.2rem;
+	height: 3rem;
 }
 
 #menu-hamburger__icon span {
   display: block;
   position: absolute;
-  height: 0.6rem;
+  height: 0.5rem;
   width: 50%;
   background: #f5f9fa;
   opacity: 1;
@@ -773,7 +773,7 @@ h4 {
   .menu-hamburger {
 		display: flex;
     margin-left: 93%;
-    padding: 0.6rem;
+    padding: 0.5rem;
 	}
 
   .content-page__inner{
