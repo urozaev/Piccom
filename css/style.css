@@ -24,6 +24,7 @@ h4 {
   display: flex;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  font-size: 1.5rem;
 }
 
 .link {
@@ -61,11 +62,14 @@ h4 {
 .info {
   display: flex;
   align-items: flex-start;
-  font-size: 1.5rem;
 }
 
-.box {
+#box {
   margin-bottom: 1.2rem;
+}
+
+.info__title {
+  max-width: 20rem;
 }
 
 .info__icon {
@@ -105,6 +109,7 @@ h4 {
 
 .header__contacts-inner {
   margin-left: 3.6%;
+  font-style: italic;
 }
 
 .header__phone {
@@ -180,7 +185,7 @@ h4 {
 
 .menu__list-item {
 	display: inline-block;
-	margin: 0 1.7rem;
+	margin: 0 0.5rem;
   font-size: 1.7rem;
 }
 
@@ -302,6 +307,7 @@ h4 {
 .breadcrumbs {
   min-height: 4rem;
   background-color: #f5f9fa;
+  font-size: 1.5rem;
 }
 
 .breadcrumbs__inner {
@@ -378,10 +384,6 @@ h4 {
 
 .form__inner:nth-child(2) {
   margin-bottom: 3.5rem;
-}
-
-.form__input {
-  background-color: #f5f9fa;
 }
 
 .person {
